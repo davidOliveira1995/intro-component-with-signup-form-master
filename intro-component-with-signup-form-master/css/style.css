@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*
+### Font
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+
+## Colors
+
+### Primary
+*/
+
+:root {
+--Red: hsl(0, 100%, 74%);
+--Green: hsl(154, 59%, 51%);
+
+/*
+  ### Accent
+*/
+--Blue: hsl(248, 32%, 49%);
+
+/*
+  ### Neutral
+*/
+
+--Dark-Blue: hsl(249, 10%, 26%) ;
+--Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+
+body {
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-image: url("../images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+  background-color: var(--Red);
+  
+  /* Centralizar */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+@media screen and (min-width: 941px) {
+  .card {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .card-intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    font-size: 2.1em;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+  }
+
+  .card-paragraphy {
+    font-size: 0.8em;
+    line-height: 1.8em;
+  }
+
+  .card-discount-box {
+    width: 450px;
+    text-align: center;
+  }
+
+  .card-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-btn-trial {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 940px) {
+  
+  .card {
+    width: 375px;
+    margin: 5px auto;
+    padding: 30px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .card-title {
+    padding-bottom: 10px;
+  }
+
+  .card-paragraphy {
+    padding-bottom: 50px;
+  }
+
+  .card-btn-trial {
+    width: 280px;
+  }
+
+}
+
+.card-discount-box {
+  border-radius: 8px;
+  padding: 10px 50px;
+  margin-bottom: 20px;
+  background-color: var(--Blue);
+}
+
+.card-discount-box--paragraphy {
+  font-size: 0.9em;
+}
+
+.card-discount-box--paragraphy-pay {
+  color: var(--Grayish-Blue);
+}
+
+.card-form {
+  padding: 20px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+
+}
+
+.form {
+  font-size: 1em;
+  color: var(--Dark-Blue);
+  text-align: left;
+  margin-left: 20px;
+}
+
+.form label {
+  color: var(--Dark-Blue);
+  font-size: 0.8em;
+  font-weight: 900;
+}
+
+.form input {
+  border: 1px solid var(--Grayish-Blue);
+  padding: 5px;
+  width: 90%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.card-btn-trial {
+  color: #fff;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  background-color: var(--Green);
+}
+
+.card-btn-terms {
+  color: var(--Red);
+  font-size: 0.7em;
+  font-weight: 800;
+  background-color: #fff;
+  border: none;
+}
